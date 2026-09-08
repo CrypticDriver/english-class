@@ -44,3 +44,22 @@ hr{border:none;border-top:1px dashed var(--line);margin:20px 0}
 footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
 @media(max-width:560px){table{font-size:13px}th,td{padding:9px 6px}
   td:first-child{white-space:normal}header h1{font-size:21px}}
+
+/* ---- 复盘增强：12词红线体检 ---- */
+.wc{display:inline-block;min-width:34px;text-align:center;padding:1px 7px;border-radius:12px;font-size:12px;font-weight:600;margin-right:6px}
+.wc.ok{background:rgba(90,209,154,.15);color:var(--green);border:1px solid rgba(90,209,154,.35)}
+.wc.warn{background:rgba(255,184,107,.15);color:var(--accent2);border:1px solid rgba(255,184,107,.35)}
+.wc.bad{background:rgba(255,126,182,.15);color:var(--pink);border:1px solid rgba(255,126,182,.35)}
+.split{background:var(--card2);border-left:4px solid var(--green);border-radius:8px;padding:10px 14px;margin:8px 0 14px;font-size:15px;line-height:1.9}
+.split .orig{color:var(--muted);font-size:14px;margin-bottom:6px}
+.split .orig s{color:var(--muted)}
+.split .note{color:var(--muted);font-size:13px;margin-top:6px}
+.split .note b{color:var(--green)}
+.pattern{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;background:var(--card2)}
+.pattern .ptitle{font-weight:600;font-size:16px;color:var(--pink);margin-bottom:6px}
+.pattern .ptitle .tag{font-size:12px;color:var(--muted);font-weight:400;margin-left:8px}
+.pattern ul{padding-left:20px;margin:6px 0}
+.pattern li{margin:4px 0;font-size:14px}
+.pattern .fix{color:var(--green);font-size:14px;margin-top:6px}
+.keep .ptitle{color:var(--green)}
+table.recycle td:first-child{white-space:normal}
