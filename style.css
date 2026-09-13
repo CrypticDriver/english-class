@@ -63,3 +63,32 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
 .pattern .fix{color:var(--green);font-size:14px;margin-top:6px}
 .keep .ptitle{color:var(--green)}
 table.recycle td:first-child{white-space:normal}
+
+/* ---- 全局型复盘：地图 / 走流程 / 定位标签 / 检验 ---- */
+.map{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.station{display:grid;grid-template-columns:44px 1fr;gap:12px;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.station .no{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;background:rgba(124,156,255,.15);color:var(--accent);border:1px solid rgba(124,156,255,.35)}
+.station .name{font-weight:600;font-size:16px;color:var(--ink)}
+.station .name small{color:var(--muted);font-weight:400;font-size:13px;margin-left:8px}
+.station .job{font-size:14px;color:var(--ink);margin-top:2px}
+.station .links{font-size:13px;color:var(--muted);margin-top:4px}
+.station .links b{color:var(--pink);font-weight:600}.station .links i{color:var(--green);font-style:normal;font-weight:600}
+.arrow{text-align:center;color:var(--muted);font-size:13px;margin:-2px 0}
+.loc{display:inline-block;font-size:12px;padding:2px 9px;border-radius:12px;background:rgba(124,156,255,.12);color:var(--accent);border:1px solid rgba(124,156,255,.3);font-weight:500;margin-left:8px;vertical-align:middle}
+.term{border-bottom:1px dashed var(--accent2);cursor:help}
+.whatif{background:rgba(255,184,107,.07);border:1px dashed rgba(255,184,107,.4);border-radius:10px;padding:12px 14px;margin-top:16px;font-size:14px}
+.whatif b{color:var(--accent2)}
+.whatif .ans{color:var(--muted);margin-top:6px}
+.walk td:first-child{white-space:nowrap;color:var(--accent);font-weight:600}
+.walk td:nth-child(3){color:var(--ink);font-size:14px}
+.hsta{font-size:17px;color:var(--ink);margin-top:28px;padding-top:18px;border-top:1px dashed var(--line)}
+.hsta:first-of-type{margin-top:8px;padding-top:0;border-top:none}
+@media(max-width:560px){
+  .walk,.walk tbody{display:block}
+  .walk tr{display:block;border-bottom:1px solid var(--line);padding:10px 0}
+  .walk tr:first-child:has(th){display:none}
+  .walk th{display:none}
+  .walk td{display:block;border:none;padding:2px 0;white-space:normal}
+  .walk td:nth-child(3){color:var(--accent2);font-weight:600;margin-top:4px}
+  .walk td:nth-child(3)::before{content:"→ ";color:var(--muted);font-weight:400}
+}
