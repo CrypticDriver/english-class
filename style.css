@@ -63,3 +63,10 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
 .pattern .fix{color:var(--green);font-size:14px;margin-top:6px}
 .keep .ptitle{color:var(--green)}
 table.recycle td:first-child{white-space:normal}
+
+/* 点开看答案 */
+details { display:inline-block; margin-top:6px; }
+details summary { cursor:pointer; color:var(--muted); font-size:13px; user-select:none; }
+details summary:hover { color:var(--ink); }
+details[open] summary { margin-bottom:4px; }
+details > *:not(summary) { display:block; }
